@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 
-export default function TodoInput() {
+export default function TodoInput(props) {
 
+  const { handleAddTodo } = props
+  
   const [todoInput, setTodoInput] = useState('')
-
-  const handleTodoInput = (e) => {
-    setTodoInput(e.target.value)
-  }
 
   return (
     <div className='input-container'>
@@ -14,8 +12,11 @@ export default function TodoInput() {
         className='input-text'
         type="text"
         value={todoInput}
-        onChange={(e) => handleTodoInput(e)}
+        onChange={(e) => {
+          setTodoInput(e.target.value)
+        }}
       />
+      <button onClick={() => handleAddTodo(todoInput)}>Add</button>
     </div>
   )
 }
