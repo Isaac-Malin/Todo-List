@@ -15,6 +15,7 @@ export default function TodoInput(props) {
         onChange={(e) => {
           setTodoInput(e.target.value)
         }}
+        placeholder='Enter todo...'
       />
       <button onClick={() => {
         handleAddTodo(todoInput)
