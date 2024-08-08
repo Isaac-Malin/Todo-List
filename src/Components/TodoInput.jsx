@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../Styles/TodoInput.css'
 
 export default function TodoInput(props) {
 
-  const { handleAddTodo } = props
+  const { handleAddTodo, todoInput, setTodoInput } = props
   
-  const [todoInput, setTodoInput] = useState('')
 
   return (
     <div className='input-container'>
