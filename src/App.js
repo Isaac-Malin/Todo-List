@@ -1,14 +1,12 @@
 import './App.css';
 import { useState } from 'react';
 import TodoList from './Components/TodoList';
-import TodoCard from './Components/TodoCard';
 import TodoInput from './Components/TodoInput';
 
 function App() {
 
   const [todos, setTodos] = useState([
-    'Go to the gym',
-    'Take the kids to the park'
+    'Kiss Brooke'
   ])
 
   const handleAddTodo = (newTodo) => {
@@ -19,8 +17,7 @@ function App() {
   return (
     <div className="App">
       <TodoInput handleAddTodo={handleAddTodo}/>
-      <TodoList />
-      <TodoCard />
+      <TodoList todos={todos}/>
     </div>
   );
 }

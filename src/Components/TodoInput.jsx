@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../Styles/TodoInput.css'
 
 export default function TodoInput(props) {
 

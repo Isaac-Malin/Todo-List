@@ -1,0 +1,27 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem; 
+}
+
+.input-container button {
+  width: 7vw;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  background-color: #B2DDF7;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-text {
+  width: 70vw;
+  padding: .4rem;
+  font-size: 1.5rem;
+  background-color: #B2DDF7;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-text:focus {
+  outline: none;
+}
