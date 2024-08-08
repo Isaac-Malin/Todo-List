@@ -1,0 +1,15 @@
+.todo-item {
+  display: flex;
+  font-size: 1.5rem;
+  background-color: #B2DDF7;
+  margin: 10px 0;
+  padding: .5rem;
+  width: 77.5vw;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.action {
+  margin: 0 6px;
+  cursor: pointer;
+}
