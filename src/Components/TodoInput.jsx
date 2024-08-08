@@ -18,7 +18,7 @@ export default function TodoInput(props) {
         }}
       />
       <button onClick={() => {
-        handleAddTodo()
+        handleAddTodo(todoInput)
         setTodoInput('')
       }}>Add</button>
     </div>
