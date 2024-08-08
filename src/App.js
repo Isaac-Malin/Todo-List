@@ -20,6 +20,9 @@ function App() {
   };
 
   const editTodo = (index) => {
+    if(todoInput) {
+      return
+    }
     const editedValue = todos[index];
     setTodoInput(editedValue);
     removeTodo(index);
